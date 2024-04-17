@@ -1,5 +1,5 @@
 package com.Paradise_Hotel.DAO;
 
-public class RoomDAO {
+public interface RoomDAO {
 
 }
