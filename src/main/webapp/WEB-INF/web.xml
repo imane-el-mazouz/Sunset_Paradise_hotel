@@ -8,7 +8,6 @@
     <servlet-name>SearchRoomsServlet</servlet-name>
     <servlet-class>com.Paradise_Hotel.Servlet.SearchRoomsServlet</servlet-class>
   </servlet>
-
   <servlet-mapping>
     <servlet-name>SearchRoomsServlet</servlet-name>
     <url-pattern>/</url-pattern>

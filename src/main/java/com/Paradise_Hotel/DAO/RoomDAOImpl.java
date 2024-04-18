@@ -20,17 +20,17 @@ public class RoomDAOImpl implements RoomDAO {
              ResultSet resultSet = statement.executeQuery()) {
 
             while (resultSet.next()) {
-                int roomId = resultSet.getInt("room_id");
+                int roomId = resultSet.getInt("roomId");
                 String type = resultSet.getString("type");
                 int price = resultSet.getInt("price");
-                String[] equipmentsArray = resultSet.getString("equipments").split(",");
-                List<String> equipments = new ArrayList<>();
-                for (String equipment : equipmentsArray) {
-                    equipments.add(equipment);
+                String[] equipementsArray = resultSet.getString("equipements").split(",");
+                List<String> equipements = new ArrayList<>();
+                for (String equipement : equipementsArray) {
+                    equipements.add(equipement);
                 }
                 boolean available = resultSet.getBoolean("available");
 
-                Room room = new Room(roomId, type, price, equipments, available);
+                Room room = new Room(roomId, type, price, equipements, available);
                 rooms.add(room);
             }
         } catch (SQLException e) {
@@ -49,17 +49,17 @@ public class RoomDAOImpl implements RoomDAO {
              ResultSet resultSet = statement.executeQuery()) {
 
             while (resultSet.next()) {
-                int roomId = resultSet.getInt("room_id");
+                int roomId = resultSet.getInt("roomId");
                 String type = resultSet.getString("type");
                 int price = resultSet.getInt("price");
-                String[] equipmentsArray = resultSet.getString("equipments").split(",");
-                List<String> equipments = new ArrayList<>();
-                for (String equipment : equipmentsArray) {
-                    equipments.add(equipment);
+                String[] equipementsArray = resultSet.getString("equipements").split(",");
+                List<String> equipements = new ArrayList<>();
+                for (String equipement : equipementsArray) {
+                    equipements.add(equipement);
                 }
                 boolean available = resultSet.getBoolean("available");
 
-                Room room = new Room(roomId, type, price, equipments, available);
+                Room room = new Room(roomId, type, price, equipements, available);
                 availableRooms.add(room);
             }
         } catch (SQLException e) {

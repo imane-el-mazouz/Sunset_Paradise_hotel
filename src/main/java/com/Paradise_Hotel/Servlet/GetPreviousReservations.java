@@ -31,7 +31,7 @@ public class GetPreviousReservations extends HttpServlet {
             request.getRequestDispatcher("/previous_reservations.jsp").forward(request, response);
         } catch (SQLException e) {
             e.printStackTrace();
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("");
         }	}
 
 	

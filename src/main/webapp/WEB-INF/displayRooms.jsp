@@ -23,7 +23,7 @@
                 <tr>
                     <td>${room.type}</td>
                     <td>${room.price}</td>
-                    <td>${room.equipments}</td>
+                    <td>${room.equipements}</td>
                     <td>${room.available ? 'Available' : 'Not Available'}</td>
                 </tr>
             </c:forEach>

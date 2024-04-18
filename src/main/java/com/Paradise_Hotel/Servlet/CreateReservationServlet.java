@@ -35,7 +35,7 @@ public class CreateReservationServlet extends HttpServlet {
             response.sendRedirect("Reservation.jsp"); 
         } catch (SQLException e) {
             e.printStackTrace();
-            response.sendRedirect("error.jsp");
+            response.sendRedirect("");
         }
     }
 

@@ -34,7 +34,7 @@ public class SearchRoomsServlet extends HttpServlet {
             request.getRequestDispatcher("/WEB-INF/displayRooms.jsp").forward(request, response);
         } catch (SQLException e) {
             e.printStackTrace();
-            response.sendRedirect("error.jsp"); 
+            response.sendRedirect(""); 
         }
     }
 
