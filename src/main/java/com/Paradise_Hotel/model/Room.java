@@ -10,7 +10,6 @@ public class Room {
      private String type;
      private int price ;
      private List<String> equipements = new ArrayList<>();
-     /*private enum Equipements*/
      private boolean available;
 	 
      
@@ -21,7 +20,9 @@ public class Room {
 		this.equipements = equipements;
 		this.available = available;
 	}
-//Getters
+     
+     //Getters
+     
      public int getroomId() {
  		return roomId;
  	}
