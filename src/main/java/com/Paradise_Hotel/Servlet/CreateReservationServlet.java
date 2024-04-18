@@ -30,13 +30,12 @@ public class CreateReservationServlet extends HttpServlet {
         int userId = Integer.parseInt(request.getParameter("userId"));
         ReservationDAOImpl reservationDAO = new ReservationDAOImpl();
         try {
-            // Example of creating a reservation
             Reservation reservation = new Reservation(userId, false, null, null, userId);
             reservationDAO.createReservation(reservation);
-            response.sendRedirect("reservation_success.jsp"); // Redirect to success page
+            response.sendRedirect("Reservation.jsp"); 
         } catch (SQLException e) {
             e.printStackTrace();
-            response.sendRedirect("error.jsp"); // Redirect to error page
+            response.sendRedirect("error.jsp");
         }
     }
 

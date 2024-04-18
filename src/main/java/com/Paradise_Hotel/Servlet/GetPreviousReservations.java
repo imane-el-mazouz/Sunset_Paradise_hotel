@@ -28,10 +28,10 @@ public class GetPreviousReservations extends HttpServlet {
         try {
             List<Reservation> previousReservations = reservationDAO.getPreviousReservations(userId);
             request.setAttribute("previousReservations", previousReservations);
-            request.getRequestDispatcher("previous_reservations.jsp").forward(request, response);
+            request.getRequestDispatcher("/previous_reservations.jsp").forward(request, response);
         } catch (SQLException e) {
             e.printStackTrace();
-            response.sendRedirect("error.jsp"); // Redirect to error page
+            response.sendRedirect("error.jsp");
         }	}
 
 	

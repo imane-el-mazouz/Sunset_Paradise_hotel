@@ -8,5 +8,6 @@ import com.Paradise_Hotel.model.Room;
 public interface RoomDAO {
 
 	List<Room> getAllRooms() throws SQLException;
+	    List<Room> getAvailableRooms() throws SQLException;
+	}
 
-}
