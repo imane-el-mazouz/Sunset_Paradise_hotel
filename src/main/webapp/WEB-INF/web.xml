@@ -2,14 +2,46 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <display-name>Hotel</display-name>
 
+
   
 
   <servlet>
+    <servlet-name>HomeServlet</servlet-name>
+    <servlet-class>com.Paradise_Hotel.Servlet.HomeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>HomeServlet</servlet-name>
+    <url-pattern>/home-page</url-pattern>
+</servlet-mapping>
+
+<servlet>
     <servlet-name>SearchRoomsServlet</servlet-name>
     <servlet-class>com.Paradise_Hotel.Servlet.SearchRoomsServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
+</servlet>
+<servlet-mapping>
     <servlet-name>SearchRoomsServlet</servlet-name>
-    <url-pattern>/</url-pattern>
-  </servlet-mapping>
+    <url-pattern>/search-room</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+    <servlet-name>CreateReservationServlet</servlet-name>
+    <servlet-class>com.Paradise_Hotel.Servlet.CreateReservationServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>CreateReservationServlet</servlet-name>
+    <url-pattern>/createReservation</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>GetPreviousReservations</servlet-name>
+    <servlet-class>com.Paradise_Hotel.Servlet.GetPreviousReservations</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>GetPreviousReservations</servlet-name>
+    <url-pattern>/previousReservations</url-pattern>
+</servlet-mapping>
+
+  
 </web-app>

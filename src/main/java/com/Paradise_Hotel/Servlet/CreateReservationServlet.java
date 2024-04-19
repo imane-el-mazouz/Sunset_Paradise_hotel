@@ -22,7 +22,7 @@ public class CreateReservationServlet extends HttpServlet {
 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.sendRedirect("reservation.jsp");
+        response.sendRedirect("/WEB-INF/Reservation.jsp");
 
 	}
 
@@ -32,7 +32,7 @@ public class CreateReservationServlet extends HttpServlet {
         try {
             Reservation reservation = new Reservation(userId, false, null, null, userId);
             reservationDAO.createReservation(reservation);
-            response.sendRedirect("Reservation.jsp"); 
+            response.sendRedirect("/WEB-INF/Reservation.jsp"); 
         } catch (SQLException e) {
             e.printStackTrace();
             response.sendRedirect("");

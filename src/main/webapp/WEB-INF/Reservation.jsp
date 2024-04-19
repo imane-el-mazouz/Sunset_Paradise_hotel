@@ -12,7 +12,7 @@
 
 <h1>Booking room </h1>
 
-<form action="CreateReservationServlet" method:"post">
+<form action="CreateReservationServlet" method="post">
      <label for="checkInDate">Check-In Date:</label> <input type="date" name="checkInDate" required><br>   
      <label for="checkOutDate">Check-Out Date:</label> <input type="date" name="checkOutDate" required><br>   
      <label for="numberofGuests">number-of-Guests:</label> <input type="number" name="numberofGuests" required><br>   

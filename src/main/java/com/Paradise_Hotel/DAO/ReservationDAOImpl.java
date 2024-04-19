@@ -42,7 +42,7 @@ public class ReservationDAOImpl {
         }
     }
 
-    public List<Reservation> getPreviousReservations(int userId) throws SQLException {
+    public List<Reservation> getAllReservations() throws SQLException {
         List<Reservation> reservations = new ArrayList<>();
         Connection connection = null;
         PreparedStatement statement = null;
@@ -50,9 +50,8 @@ public class ReservationDAOImpl {
 
         try {
             connection = FactoryDAO.getConnection();
-            String query = "SELECT * FROM reservations WHERE user_id = ?";
+            String query = "SELECT * FROM reservations";
             statement = connection.prepareStatement(query);
-            statement.setInt(1, userId);
             resultSet = statement.executeQuery();
 
             while (resultSet.next()) {
@@ -67,16 +66,9 @@ public class ReservationDAOImpl {
             }
         } finally {
             if (resultSet != null) {
-                resultSet.close();
-            }
-            if (statement != null) {
-                statement.close();
-            }
-            if (connection != null) {
-                connection.close();
+               
             }
         }
-
-        return reservations;
+		return reservations;
     }
 }
