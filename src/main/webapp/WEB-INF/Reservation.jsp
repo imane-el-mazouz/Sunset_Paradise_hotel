@@ -12,14 +12,15 @@
 
 <h1>Booking room </h1>
 
-<form action="CreateReservationServlet" method="post">
-     <label for="checkInDate">Check-In Date:</label> <input type="date" name="checkInDate" required><br>   
-     <label for="checkOutDate">Check-Out Date:</label> <input type="date" name="checkOutDate" required><br>   
-     <label for="numberofGuests">number-of-Guests:</label> <input type="number" name="numberofGuests" required><br>   
-     <input type="submit" value="Reserve">
-      
- 
+<form action="CreateReservationServlet" method="get">
+    <label for="id">ID:</label> <input type="text" id="id" name="id" required><br>   
+    <label for="reservedRoom">Reserved Room:</label> <input type="text" id="reservedRoom" name="reservedRoom" required><br>   
+    <label for="checkInDate">Check-In Date:</label> <input type="date" id="checkInDate" name="checkInDate" required><br>   
+    <label for="checkOutDate">Check-Out Date:</label> <input type="date" id="checkOutDate" name="checkOutDate" required><br>   
+    <label for="numberOfGuests">Number of Guests:</label> <input type="number" id="numberOfGuests" name="numberOfGuests" required><br> 
+    <input type="submit" value="Book">
 </form>
+
 
 </body>
 </html>

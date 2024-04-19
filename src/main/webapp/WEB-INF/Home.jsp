@@ -23,9 +23,10 @@
         <section id="links">
             <h2>Explore our Services</h2>
             <ul>
-                <li><a href="Reservation.jsp">Book your stay.</a></li>
-                <li><a href="previous_reservations.jsp">your previous reservations</a></li>
-                <li><a href="displayRooms.jsp">Find your ideal room.</a></li>
+                <li><a href="/Paradise_Hotel/search-room">Find your ideal room.</a></li>
+                <li><a href="/Paradise_Hotel/previous-Reservations">your previous reservations</a></li>
+                <li><a href="/Paradise_Hotel/create-Reservation">Book your stay.</a></li>
+                
             </ul>
         </section>
 

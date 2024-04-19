@@ -8,16 +8,18 @@ public class Reservation {
     private Date checkInDate;
     private Date checkOutDate;
     private int numberofGuests;
+    private int roomId;
     
     
     
 
-	public Reservation(int id, boolean reservedRoom, Date checkInDate, Date checkOutDate, int numberofGuests) {
+	public Reservation(int id, boolean reservedRoom, Date checkInDate, Date checkOutDate, int numberofGuests, int roomId) {
 		this.id = id;
 		this.reservedRoom = reservedRoom;
 		this.checkInDate = checkInDate;
 		this.checkOutDate = checkOutDate;
 		this.numberofGuests = numberofGuests;
+		this.roomId = roomId;
 	}
 
 
@@ -43,7 +45,10 @@ public class Reservation {
 	public int getNumberofGuests() {
 		return numberofGuests;
 	}
-
+	
+	public int getroomId() {
+		return roomId;
+	}
     //Setters
 
 	public void setId(int id) {
@@ -66,7 +71,9 @@ public class Reservation {
 		this.numberofGuests = numberofGuests;
 	}
 	
-	
+	public void setRoomId(int roomId) {
+		this.roomId = roomId;
+	}
 	
     
     

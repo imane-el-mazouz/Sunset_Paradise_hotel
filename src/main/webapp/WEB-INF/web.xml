@@ -30,7 +30,7 @@
 </servlet>
 <servlet-mapping>
     <servlet-name>CreateReservationServlet</servlet-name>
-    <url-pattern>/createReservation</url-pattern>
+    <url-pattern>/create-Reservation</url-pattern>
 </servlet-mapping>
 
 <servlet>
@@ -39,7 +39,7 @@
 </servlet>
 <servlet-mapping>
     <servlet-name>GetPreviousReservations</servlet-name>
-    <url-pattern>/previousReservations</url-pattern>
+    <url-pattern>/previous-Reservations</url-pattern>
 </servlet-mapping>
 
   
