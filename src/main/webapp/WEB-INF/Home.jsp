@@ -26,7 +26,6 @@
                 <li><a href="Reservation.jsp">Book your stay.</a></li>
                 <li><a href="previous_reservations.jsp">your previous reservations</a></li>
                 <li><a href="displayRooms.jsp">Find your ideal room.</a></li>
-                <li><a href="contact.jsp">Contact Us</a></li>
             </ul>
         </section>
 

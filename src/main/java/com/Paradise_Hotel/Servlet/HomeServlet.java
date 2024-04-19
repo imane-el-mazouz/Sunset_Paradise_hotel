@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/HomeServlet")
 public class HomeServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -20,7 +19,7 @@ public class HomeServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         
-        RequestDispatcher dispatcher = request.getRequestDispatcher("Home.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/Home.jsp");
         dispatcher.forward(request, response);
     }
 
