@@ -1,4 +1,4 @@
-                                                      # Sunset Paradise Hotel Web Application
+# Sunset Paradise Hotel Web Application
 
 Cette application web permet aux utilisateurs de rechercher des chambres d'hôtel disponibles, d'effectuer des réservations et de consulter leurs réservations précédentes au Sunset Paradise Hotel. Elle offre une expérience conviviale, réactive et sécurisée aux clients de l'hôtel.
 
